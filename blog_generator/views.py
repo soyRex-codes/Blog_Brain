@@ -140,7 +140,7 @@ def get_transcription(link):
     #OPENAI part
 
 def generate_blog_from_transcription(transcription):
-    client = OpenAI(api_key="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")  # Replace with your actual API key
+    client = OpenAI("Your Open AI key")  # Replace with your actual API key
     try:
         completion = client.chat.completions.create(
             model="gpt-4",  # Ensure you're using a valid model ID
