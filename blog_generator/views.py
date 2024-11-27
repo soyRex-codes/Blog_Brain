@@ -127,7 +127,7 @@ def get_transcription(link):
     audio_file = download_audio(link)
     if audio_file.startswith("Error"): ## Check if there was an error downloading audio
         return audio_file #return error
-    aai.settings.api_key ="ef9a420a655446e7a02a6f339d827023"
+    aai.settings.api_key ="Your aai key"
 
     try:
         transcriber = aai.Transcriber()
